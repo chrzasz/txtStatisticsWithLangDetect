@@ -1,6 +1,7 @@
 package commandline;
 
 import analyzer.*;
+import detectlanguage.DetectLang;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
 
@@ -20,6 +21,8 @@ public class CommandLineApp {
   private File file;
   @Option(names = {"-v", "--verbose"}, description = "Be verbose.")
   private boolean verbose = false;
+  @Option(names = {"-dl", "--detectLNG"}, description = "detect language in a text")
+  private boolean detectLanguage = false;
 
   private static String readFileAsString(String fileName) throws Exception {
 
@@ -48,6 +51,10 @@ public class CommandLineApp {
     MultiAnalyzer multiAnalyzer = new MultiAnalyzer(analyzers);
     multiAnalyzer.performAnalyzis(str);
     multiAnalyzer.showResult();
+
+    if (detectLanguage) {
+      DetectLang detectLang = new DetectLang(str);
+    }
 
   } //END run()
 

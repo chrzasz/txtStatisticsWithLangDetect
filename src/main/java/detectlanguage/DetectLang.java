@@ -10,18 +10,13 @@ import java.util.List;
  */
 public class DetectLang {
 
-
-  public static void main(String[] args) throws Exception {
+  public DetectLang(String text) throws Exception {
 
     DetectLanguage.apiKey = "f6454aefb7cd00e46e56974ecc0ea137";
-
-    List<Result> results = DetectLanguage.detect("Ala ma kota");
-
+    List<Result> results = DetectLanguage.detect(text);
     Result result = results.get(0);
-
     System.out.println("Language: " + result.language);
     System.out.println("Is reliable: " + result.isReliable);
     System.out.println("Confidence: " + result.confidence);
-
   }
 }
