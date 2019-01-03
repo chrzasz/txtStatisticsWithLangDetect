@@ -21,8 +21,10 @@ public class CommandLineApp {
   private File file;
   @Option(names = {"-v", "--verbose"}, description = "Be verbose.")
   private boolean verbose = false;
-  @Option(names = {"-dl", "--detectLNG"}, description = "detect language in a text")
+  @Option(names = {"-d", "--detectLNG"}, description = "detect language from a provided text file")
   private boolean detectLanguage = false;
+  @Option(names = {"-h", "--help"}, usageHelp = true, description = "display a help message")
+  private boolean helpRequested = false;
 
   private static String readFileAsString(String fileName) throws Exception {
 
