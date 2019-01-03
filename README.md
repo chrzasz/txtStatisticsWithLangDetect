@@ -16,9 +16,6 @@ Ponadto może porównać własne wyniki z serwisem:
 
 [DetectLanguage.com](DetectLanguage.com)
 
-[validator online](http://ewalidator.pl/generator-numeru-dowodu-osobistego)
-
-
 Sample console output:
 ```
 CHARACTERS FREQUENCY:
