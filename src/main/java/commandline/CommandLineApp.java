@@ -58,6 +58,8 @@ public class CommandLineApp {
       DetectLang detectLang = new DetectLang(str);
     }
 
+    if (helpRequested) System.out.println("help");
+
   } //END run()
 
 }// END CommandLineApp

@@ -1,6 +1,6 @@
-###This is a project analyzing text from file
+### This is a project analyzing text from file
 
-######txt file import using picocli library and filename as program argument
+###### txt file import using picocli library and filename as program argument
 
 Napisz program, który wczyta tekst z pliku. (przyklad ksiazki "Pan Tadeusz")
 Program przeanalizuje tekst z pliku pt.txt i poda:

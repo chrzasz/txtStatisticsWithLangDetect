@@ -38,7 +38,6 @@ public class TopTenLongestWordsUsedOnce implements Analyzer {
     }
     topTenUniqueLongestWords = topTenUniqueLongestWords
             .stream()
-            .distinct()
             .sorted(Comparator.comparing(String::length).reversed())
             .limit(10)
             .collect(Collectors.toList());

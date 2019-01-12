@@ -15,6 +15,5 @@ public class Main {
     } else {
       System.out.println("This programme is not running without entry parameters!");
     }
-
   }
 }

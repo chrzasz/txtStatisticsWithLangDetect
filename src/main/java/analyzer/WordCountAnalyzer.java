@@ -25,7 +25,6 @@ public class WordCountAnalyzer implements Analyzer {
             .split(RegexPatterns.WHITE_SPACES);
 
     for (String word : words) {
-      //Get the character
       wordsOccurance.merge(word, 1, (a, b) -> a + b);
     }
 
